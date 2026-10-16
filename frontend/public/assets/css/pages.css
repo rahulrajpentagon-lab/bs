@@ -1,0 +1,565 @@
+/* Extra page styles for Laravel sub-pages and admin-adjacent frontend */
+
+.inner-banner {
+    padding: 140px 0 70px;
+    background-color: var(--light, #f4f7f6);
+    background-image: radial-gradient(#d5e0dc 0.7px, transparent 0.7px);
+    background-size: 22px 22px;
+}
+
+.inner-banner h1 {
+    color: var(--dark);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: clamp(34px, 5vw, 52px);
+    margin-bottom: 14px;
+}
+
+.inner-banner p {
+    max-width: 640px;
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+
+.page-section {
+    padding: 80px 0;
+}
+
+.brand-logo {
+    height: 44px;
+    width: auto;
+    max-width: min(200px, 60vw);
+}
+
+@media (max-width: 575.98px) {
+    .brand-logo {
+        height: 36px;
+    }
+}
+
+.honeypot-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+/* =====================================================
+   OUR WORKS — professional devices + simple animation
+===================================================== */
+
+.works-section {
+    background: linear-gradient(180deg, #ffffff 0%, var(--light) 55%, #ffffff 100%);
+}
+
+.works-carousel {
+    position: relative;
+    padding: 8px 0 56px;
+}
+
+.works-carousel.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity .55s ease;
+}
+
+.works-carousel.carousel-fade .carousel-item.active,
+.works-carousel.carousel-fade .carousel-item.carousel-item-next.carousel-item-start,
+.works-carousel.carousel-fade .carousel-item.carousel-item-prev.carousel-item-end {
+    opacity: 1;
+}
+
+.works-slide {
+    padding: 8px 4px 18px;
+}
+
+.device-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .55s ease, transform .55s ease;
+}
+
+.carousel-item.active .device-stage {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.works-copy {
+    padding: 8px 4px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .55s ease .08s, transform .55s ease .08s;
+}
+
+.carousel-item.active .works-copy {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Shared screen image rules — must override global img{max-width:100%} */
+.device-screen-img {
+    display: block;
+    border: 0;
+}
+
+.device-laptop-screen .device-screen-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Laptop mockup — compact 16:9 frame */
+.device-laptop {
+    width: min(100%, 420px);
+    margin: 0 auto;
+}
+
+.device-laptop-screen {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #1b2421;
+    border: 8px solid #1b2421;
+    border-bottom-width: 6px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(15, 31, 28, 0.12);
+}
+
+.device-laptop-camera {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    margin-left: -2.5px;
+    border-radius: 50%;
+    background: #3a4a46;
+    z-index: 2;
+}
+
+.device-laptop-screen .device-screen-img {
+    background: #eef4f2;
+}
+
+.device-laptop-base {
+    height: 11px;
+    background: linear-gradient(180deg, #d7e0dd, #c4d0cc);
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    box-shadow: 0 8px 14px rgba(15, 31, 28, 0.07);
+}
+
+.device-laptop-base::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 108%;
+    height: 6px;
+    margin-left: -54%;
+    background: #b7c4bf;
+    border-radius: 0 0 10px 10px;
+}
+
+.device-laptop-notch {
+    width: 14%;
+    height: 4px;
+    margin: 3px auto 0;
+    background: #9aaba5;
+    border-radius: 0 0 5px 5px;
+}
+
+.device-laptop-sm {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 8px;
+}
+
+/* Real iPhone frame — tall & narrow */
+.device-phone {
+    width: 180px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #0b0f0e;
+    border: 2px solid #3a3f3e;
+    border-radius: 36px;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 18px 40px rgba(15, 31, 28, 0.22);
+    position: relative;
+    padding: 10px;
+    overflow: visible;
+}
+
+/* Side buttons */
+.device-phone::before,
+.device-phone::after {
+    content: "";
+    position: absolute;
+    background: #2f3433;
+    border-radius: 2px;
+    z-index: 3;
+}
+
+.device-phone::before {
+    left: -3px;
+    top: 95px;
+    width: 3px;
+    height: 24px;
+    box-shadow: 0 36px 0 #2f3433, 0 70px 0 #2f3433;
+}
+
+.device-phone::after {
+    right: -3px;
+    top: 124px;
+    width: 3px;
+    height: 64px;
+}
+
+/* Dynamic Island */
+.device-phone-notch {
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    width: 64px;
+    height: 17px;
+    margin-left: -32px;
+    background: #000;
+    border-radius: 20px;
+    z-index: 6;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+    pointer-events: none;
+}
+
+.device-phone-notch::after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #2a4a6a, #0a1520 70%);
+}
+
+/* Tall phone screen — real phone proportions */
+.device-phone-screen {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: 26px;
+    background: #000;
+}
+
+/*
+ * Mobile screenshots are phone-shaped (≈9:16).
+ * Cover fills the frame cleanly without showing a desktop layout.
+ */
+.device-phone-screen .device-screen-img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover;
+    object-position: top center;
+    transform: none;
+    z-index: 1;
+}
+
+/* Home indicator */
+.device-phone-screen::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    width: 32%;
+    height: 3px;
+    margin-left: -16%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.device-phone-sm {
+    width: 170px;
+    max-width: 100%;
+    margin: 0 auto 18px;
+}
+
+.works-category {
+    display: inline-block;
+    background: var(--light-blue);
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.works-copy h3,
+.work-card-body h3,
+.app-card-body h3 {
+    color: var(--dark);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: clamp(22px, 3vw, 32px);
+    margin-bottom: 12px;
+}
+
+.works-copy p,
+.work-card-body p,
+.app-card-body p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.works-points {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.works-points li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.works-points i {
+    color: var(--success);
+}
+
+.works-control {
+    width: auto;
+    opacity: 1;
+}
+
+.works-control-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(15, 31, 28, 0.08);
+    transition: .25s ease;
+}
+
+.works-control:hover .works-control-btn {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.works-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #c9d5d1;
+    border: 0;
+    opacity: 1;
+    transition: width .25s ease, background .25s ease;
+}
+
+.works-indicators .active {
+    background: var(--primary);
+    width: 24px;
+    border-radius: 20px;
+}
+
+/* Works page */
+.works-page-section {
+    background: #fff;
+}
+
+.work-device-card,
+.app-device-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px 18px 18px;
+    box-shadow: 0 10px 28px rgba(15, 31, 28, 0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+    overflow: visible;
+}
+
+.work-device-card:hover,
+.app-device-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgba(15, 31, 28, 0.1);
+}
+
+.work-card-body,
+.app-card-body {
+    padding: 18px 8px 14px;
+}
+
+.mobile-apps-section {
+    background: linear-gradient(180deg, var(--light) 0%, #ffffff 100%);
+}
+
+.app-device-card {
+    padding-top: 18px;
+}
+
+.app-screen {
+    width: min(100%, 280px);
+    margin: 0 auto 4px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #eef4f2;
+}
+
+.app-screen-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none !important;
+}
+
+@media (max-width: 991.98px) {
+    .works-copy {
+        text-align: center;
+    }
+
+    .works-points {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .device-stage {
+        min-height: 0;
+        padding: 4px 0 16px;
+    }
+
+    .device-laptop {
+        width: min(100%, 360px);
+    }
+
+    .device-laptop-sm {
+        max-width: 100%;
+    }
+
+    .device-phone {
+        width: 170px;
+    }
+
+    .device-phone-sm {
+        width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .works-control {
+        display: none;
+    }
+
+    .works-carousel {
+        padding-bottom: 48px;
+    }
+
+    .works-slide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .device-laptop {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .device-laptop-sm {
+        max-width: 100%;
+    }
+
+    .device-laptop-screen {
+        border-width: 6px;
+        border-bottom-width: 5px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .device-laptop-base {
+        height: 9px;
+    }
+
+    .device-laptop-base::after {
+        bottom: -5px;
+        height: 5px;
+        width: 106%;
+        margin-left: -53%;
+    }
+
+    .device-phone {
+        width: 160px;
+        border-radius: 32px;
+        padding: 9px;
+    }
+
+    .device-phone-sm {
+        width: 150px;
+    }
+
+    .device-phone-screen {
+        border-radius: 22px;
+    }
+
+    .device-phone-notch {
+        top: 15px;
+        width: 56px;
+        height: 15px;
+        margin-left: -28px;
+    }
+
+    .device-phone::before {
+        top: 80px;
+        height: 20px;
+        box-shadow: 0 30px 0 #2f3433, 0 58px 0 #2f3433;
+    }
+
+    .device-phone::after {
+        top: 106px;
+        height: 54px;
+    }
+
+    .work-device-card,
+    .app-device-card {
+        padding: 16px 12px 14px;
+    }
+}

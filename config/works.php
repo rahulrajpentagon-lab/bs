@@ -1,0 +1,126 @@
+<?php
+
+return [
+
+    'featured' => [
+        [
+            'image' => 'assets/images/works/cafe-website.jpg',
+            'title' => 'Green Leaf Cafe Website',
+            'category' => 'Business Website',
+            'type' => 'website',
+            'desc' => 'A modern cafe website with menu showcase, WhatsApp ordering and mobile-first design.',
+        ],
+        [
+            'image' => 'assets/images/works/ecommerce.jpg',
+            'title' => 'Bloom Fashion Store',
+            'category' => 'E-commerce',
+            'type' => 'website',
+            'desc' => 'Full online store with product catalog, cart flow and conversion-focused product pages.',
+        ],
+        [
+            'image' => 'assets/images/works/hotel.jpg',
+            'title' => 'Coastal Stay Hotels',
+            'category' => 'Hotel Booking',
+            'type' => 'website',
+            'desc' => 'Hospitality website with room packages, booking journey and premium brand presentation.',
+        ],
+        [
+            'image' => 'assets/images/works/dashboard.jpg',
+            'title' => 'BizTrack CRM Dashboard',
+            'category' => 'Web Application',
+            'type' => 'webapp',
+            'desc' => 'Custom business dashboard with analytics, reports and workflow-focused admin panels.',
+        ],
+        [
+            'image' => 'assets/images/works/app-delivery.jpg',
+            'title' => 'QuickBite Delivery App',
+            'category' => 'Mobile Application',
+            'type' => 'mobile',
+            'desc' => 'Customer food ordering app with restaurant browsing, cart and live order tracking.',
+        ],
+    ],
+
+    'all' => [
+        [
+            'image' => 'assets/images/works/cafe-website.jpg',
+            'title' => 'Green Leaf Cafe Website',
+            'category' => 'Business Website',
+            'type' => 'website',
+            'desc' => 'A modern cafe website with menu showcase, WhatsApp ordering and mobile-first design.',
+            'features' => ['Responsive design', 'Menu & offers pages', 'WhatsApp enquiry'],
+        ],
+        [
+            'image' => 'assets/images/works/restaurant.jpg',
+            'title' => 'Spice Route Restaurant',
+            'category' => 'Restaurant Website',
+            'type' => 'website',
+            'desc' => 'Elegant restaurant website with digital menu, reservations CTA and brand storytelling.',
+            'features' => ['Reservation focused', 'Gallery & menu', 'Mobile optimized'],
+        ],
+        [
+            'image' => 'assets/images/works/ecommerce.jpg',
+            'title' => 'Bloom Fashion Store',
+            'category' => 'E-commerce',
+            'type' => 'website',
+            'desc' => 'Full online store with product catalog, cart flow and conversion-focused product pages.',
+            'features' => ['Product catalog', 'Cart & checkout UI', 'Campaign banners'],
+        ],
+        [
+            'image' => 'assets/images/works/realestate.jpg',
+            'title' => 'Prime Homes Realty',
+            'category' => 'Real Estate Portal',
+            'type' => 'webapp',
+            'desc' => 'Property listing portal with smart filters, project highlights and lead-ready enquiry forms.',
+            'features' => ['Listing filters', 'Lead forms', 'Project showcase'],
+        ],
+        [
+            'image' => 'assets/images/works/hotel.jpg',
+            'title' => 'Coastal Stay Hotels',
+            'category' => 'Hotel Booking',
+            'type' => 'website',
+            'desc' => 'Hospitality website with room packages, booking journey and premium brand presentation.',
+            'features' => ['Room packages', 'Booking UI', 'Premium branding'],
+        ],
+        [
+            'image' => 'assets/images/works/education.jpg',
+            'title' => 'BrightPath Academy',
+            'category' => 'Education Website',
+            'type' => 'website',
+            'desc' => 'Institute website with course listings, admissions enquiry and campus presentation.',
+            'features' => ['Course pages', 'Admission CTA', 'Campus gallery'],
+        ],
+        [
+            'image' => 'assets/images/works/dashboard.jpg',
+            'title' => 'BizTrack CRM Dashboard',
+            'category' => 'Web Application',
+            'type' => 'webapp',
+            'desc' => 'Custom business dashboard with analytics, reports and workflow-focused admin panels.',
+            'features' => ['Analytics cards', 'Reports UI', 'Admin workflows'],
+        ],
+        [
+            'image' => 'assets/images/works/app-delivery.jpg',
+            'title' => 'QuickBite Delivery App',
+            'category' => 'Mobile Application',
+            'type' => 'mobile',
+            'desc' => 'Food delivery mobile app with restaurant discovery, cart and live order tracking screens.',
+            'features' => ['Restaurant browse', 'Cart & checkout', 'Order tracking'],
+        ],
+        [
+            'image' => 'assets/images/works/app-fitness.jpg',
+            'title' => 'FitPulse Membership App',
+            'category' => 'Mobile Application',
+            'type' => 'mobile',
+            'desc' => 'Gym membership app for class booking, membership status and workout reminders.',
+            'features' => ['Class booking', 'Membership card', 'Reminders'],
+        ],
+        [
+            'image' => 'assets/images/works/app-property.jpg',
+            'title' => 'NestFind Property App',
+            'category' => 'Mobile Application',
+            'type' => 'mobile',
+            'desc' => 'Property discovery mobile app with listing cards, saved homes and enquiry shortcuts.',
+            'features' => ['Property browse', 'Save favorites', 'Quick enquiry'],
+        ],
+    ],
+
+];

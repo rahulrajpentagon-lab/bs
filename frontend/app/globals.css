@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Manrope:wght@800&display=swap');
+
+/* Contact card + form alignment overrides (match original Kayacode layout) */
+.contact-section .contact-card {
+  background: #ffffff;
+  border: 1px solid var(--border, #d5e0dc);
+  border-radius: 20px;
+  padding: 32px 28px;
+}
+
+@media (min-width: 768px) {
+  .contact-section .contact-card {
+    padding: 40px;
+  }
+}
+
+.contact-side-title {
+  color: var(--dark, #0f1f1c);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.contact-side-text {
+  color: var(--muted, #6b7c77);
+  margin-bottom: 8px;
+}
+
+.contact-section .contact-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.contact-section .contact-info i {
+  color: var(--primary, #0f6b5c);
+  font-size: 22px;
+  line-height: 1.2;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-section .contact-info strong {
+  display: block;
+  color: var(--dark, #0f1f1c);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.contact-section .contact-info a,
+.contact-section .contact-info span {
+  color: var(--text, #3d4f4a);
+  word-break: break-word;
+}
+
+.enquiry-form .form-label {
+  display: block;
+  color: var(--dark, #0f1f1c);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.enquiry-form .form-control,
+.enquiry-form .form-select {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid var(--border, #d5e0dc);
+  border-radius: 9px;
+  padding: 12px 15px;
+  color: var(--text, #3d4f4a);
+  background: #fff;
+}
+
+.enquiry-form textarea.form-control {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.enquiry-form .form-control:focus,
+.enquiry-form .form-select:focus {
+  border-color: var(--primary, #0f6b5c);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 92, 0.12);
+  outline: none;
+}
+
+.enquiry-form .btn-primary-custom {
+  margin-top: 4px;
+}
+
+.enquiry-form .btn-primary-custom:disabled {
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+  .contact-section .contact-card .col-lg-5 {
+    margin-bottom: 8px;
+  }
+}
