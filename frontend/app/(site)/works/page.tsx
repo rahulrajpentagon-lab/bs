@@ -14,7 +14,7 @@ export default async function WorksPage() {
 
   return (
     <>
-      <section className="inner-banner">
+      <section className="inner-banner works-banner">
         <div className="container">
           <h1>Our Works</h1>
           <p>
@@ -28,13 +28,13 @@ export default async function WorksPage() {
         <div className="container">
           <div className="section-title">
             <span className="section-label">WEBSITES & WEB APPS</span>
-            <h2>Designs presented on laptop screens</h2>
+            <h2>Website and web app projects</h2>
           </div>
           <div className="row g-4 g-xl-5">
             {websites.map((work) => (
               <div className="col-md-6" key={work.title}>
                 <article className="work-device-card h-100">
-                  <div className="device-laptop device-laptop-sm">
+                  <div className="device-laptop device-laptop-sm work-laptop">
                     <div className="device-laptop-screen">
                       <div className="device-laptop-camera" aria-hidden="true" />
                       <img
@@ -51,6 +51,22 @@ export default async function WorksPage() {
                       <div className="device-laptop-notch" />
                     </div>
                   </div>
+                  {work.mobile_image && (
+                    <div className="device-phone device-phone-sm work-phone">
+                      <div className="device-phone-notch" aria-hidden="true" />
+                      <div className="device-phone-screen">
+                        <img
+                          src={`/${work.mobile_image}`}
+                          alt={`${work.title} mobile website view`}
+                          className="device-screen-img"
+                          width={390}
+                          height={844}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  )}
                   <div className="work-card-body">
                     <span className="works-category">{work.category}</span>
                     <h3>{work.title}</h3>

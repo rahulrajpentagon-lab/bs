@@ -9,6 +9,7 @@ export type Company = {
 
 export type WorkItem = {
   image: string;
+  mobile_image?: string;
   title: string;
   category: string;
   type: string;

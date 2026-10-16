@@ -5,6 +5,7 @@ return [
     'featured' => [
         [
             'image' => 'assets/images/works/cafe-website.jpg',
+            'mobile_image' => 'assets/images/works/mobile-cafe.jpg',
             'title' => 'Green Leaf Cafe Website',
             'category' => 'Business Website',
             'type' => 'website',
@@ -12,6 +13,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/ecommerce.jpg',
+            'mobile_image' => 'assets/images/works/mobile-ecommerce.jpg',
             'title' => 'Bloom Fashion Store',
             'category' => 'E-commerce',
             'type' => 'website',
@@ -19,6 +21,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/hotel.jpg',
+            'mobile_image' => 'assets/images/works/mobile-hotel.jpg',
             'title' => 'Coastal Stay Hotels',
             'category' => 'Hotel Booking',
             'type' => 'website',
@@ -26,6 +29,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/dashboard.jpg',
+            'mobile_image' => 'assets/images/works/mobile-dashboard.jpg',
             'title' => 'BizTrack CRM Dashboard',
             'category' => 'Web Application',
             'type' => 'webapp',
@@ -43,6 +47,7 @@ return [
     'all' => [
         [
             'image' => 'assets/images/works/cafe-website.jpg',
+            'mobile_image' => 'assets/images/works/mobile-cafe.jpg',
             'title' => 'Green Leaf Cafe Website',
             'category' => 'Business Website',
             'type' => 'website',
@@ -51,6 +56,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/restaurant.jpg',
+            'mobile_image' => 'assets/images/works/mobile-restaurant.jpg',
             'title' => 'Spice Route Restaurant',
             'category' => 'Restaurant Website',
             'type' => 'website',
@@ -59,6 +65,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/ecommerce.jpg',
+            'mobile_image' => 'assets/images/works/mobile-ecommerce.jpg',
             'title' => 'Bloom Fashion Store',
             'category' => 'E-commerce',
             'type' => 'website',
@@ -67,6 +74,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/realestate.jpg',
+            'mobile_image' => 'assets/images/works/mobile-realestate.jpg',
             'title' => 'Prime Homes Realty',
             'category' => 'Real Estate Portal',
             'type' => 'webapp',
@@ -75,6 +83,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/hotel.jpg',
+            'mobile_image' => 'assets/images/works/mobile-hotel.jpg',
             'title' => 'Coastal Stay Hotels',
             'category' => 'Hotel Booking',
             'type' => 'website',
@@ -83,6 +92,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/education.jpg',
+            'mobile_image' => 'assets/images/works/mobile-education.jpg',
             'title' => 'BrightPath Academy',
             'category' => 'Education Website',
             'type' => 'website',
@@ -91,6 +101,7 @@ return [
         ],
         [
             'image' => 'assets/images/works/dashboard.jpg',
+            'mobile_image' => 'assets/images/works/mobile-dashboard.jpg',
             'title' => 'BizTrack CRM Dashboard',
             'category' => 'Web Application',
             'type' => 'webapp',

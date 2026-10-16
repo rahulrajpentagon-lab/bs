@@ -102,3 +102,109 @@
     margin-bottom: 8px;
   }
 }
+
+.works-page-section .work-phone {
+  display: none;
+}
+
+/* Works page — phone layout: real mobile UI inside the phone frame */
+@media (max-width: 767.98px) {
+  .works-banner {
+    padding: 108px 0 28px;
+    text-align: center;
+  }
+
+  .works-banner h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .works-banner p {
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0 auto;
+  }
+
+  .works-page-section.section-padding,
+  .mobile-apps-section.section-padding {
+    padding: 42px 0 28px;
+  }
+
+  .works-page-section .section-title,
+  .mobile-apps-section .section-title {
+    margin-bottom: 22px;
+  }
+
+  .works-page-section .section-title h2,
+  .mobile-apps-section .section-title h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .works-page-section .work-device-card,
+  .mobile-apps-section .app-device-card {
+    padding: 12px 12px 18px;
+    border-radius: 22px;
+    box-shadow: 0 14px 32px rgba(15, 31, 28, 0.08);
+    overflow: hidden;
+  }
+
+  .works-page-section .work-laptop {
+    display: none;
+  }
+
+  .works-page-section .work-phone {
+    display: block;
+    width: 220px;
+    margin: 8px auto 4px;
+  }
+
+  .works-page-section .work-phone .device-phone-screen .device-screen-img {
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .works-page-section .work-card-body,
+  .mobile-apps-section .app-card-body {
+    padding: 16px 6px 4px;
+    text-align: center;
+  }
+
+  .works-page-section .work-card-body h3,
+  .mobile-apps-section .app-card-body h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .works-page-section .work-card-body p,
+  .mobile-apps-section .app-card-body p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+
+  .works-page-section .works-points {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .mobile-apps-section .app-screen {
+    width: min(100%, 240px);
+    margin: 8px auto 0;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #0f1f1c;
+    box-shadow:
+      0 0 0 8px #111816,
+      0 18px 36px rgba(15, 31, 28, 0.18);
+  }
+
+  .mobile-apps-section .app-screen-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+}
